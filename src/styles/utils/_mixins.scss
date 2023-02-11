@@ -1,0 +1,15 @@
+@mixin flex($dis,$dir,$wrap,$just,$align) {
+    display: $dis;
+    flex-flow: $dir $wrap;
+    justify-content: $just;
+    align-items: $align;
+}
+
+@mixin ellipsis {
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: left;
+}
+
