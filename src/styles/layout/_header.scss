@@ -1,0 +1,21 @@
+.ks-Header {
+    padding: 32px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #FF6060;
+}
+
+.ks-nav{
+    width: 20%;
+        ul{
+            display: flex;
+            justify-content: space-between;
+            list-style-type: none;
+            font-size: 1.3em;
+            width: 90%}
+        li:hover{
+            border-bottom: 2px solid #FF6060;
+            padding-bottom: 0}
+
+}

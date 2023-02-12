@@ -1,11 +1,12 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;800&display=swap");
 * {
   box-sizing: border-box;
 }
 
 body {
-  width: 100%;
-  margin: 0;
-  font-family: "Roboto", sans-serif;
+  width: 90%;
+  margin: auto;
+  font-family: "Montserrat", sans-serif;
   text-align: center;
 }
 
@@ -16,4 +17,53 @@ a {
 
 ul, ol {
   list-style-type: none;
+}
+
+.ks-Header {
+  padding: 32px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #FF6060;
+}
+
+.ks-nav {
+  width: 20%;
+}
+.ks-nav ul {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+  font-size: 1.3em;
+  width: 90%;
+}
+.ks-nav li:hover {
+  border-bottom: 2px solid #FF6060;
+  padding-bottom: 0;
+}
+
+.banner {
+  width: 100%;
+  height: 220px;
+  margin-bottom: 30px;
+  position: relative;
+  border-radius: 25px;
+  background-color: rgb(89, 89, 89);
+}
+.banner_titre {
+  position: absolute;
+  margin: 0;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: rgb(255, 255, 255);
+  font-size: 3em;
+  font-weight: 500;
+  z-index: 1;
+}
+.banner_img {
+  width: 100%;
+  height: 100%;
+  border-radius: 25px;
+  opacity: 0.6;
 }/*# sourceMappingURL=index.css.map */
