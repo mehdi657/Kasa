@@ -6,12 +6,10 @@ function Header() {
       <h1>
         <img src={logo} alt="Kasa" className="ks-logo" />
       </h1>
-      <nav className="ks-nav">
-        <ul>
-          <li>Accueil</li>
-          <li>A Propos</li>
-        </ul>
-      </nav>
+      <ul>
+        <li><a href="#">Accueil</a></li>
+        <li><a href="#">A Propos</a></li>
+      </ul>
     </div>
   );
 }
