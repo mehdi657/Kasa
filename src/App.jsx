@@ -1,20 +1,28 @@
 import React from 'react';
-import Banner from './components/Banner';
+import { BrowserRouter as Router,Route, Routes } from 'react-router-dom';
+import Home from './pages/Home';
 import Header from './components/Header';
-import BlocCard from './components/BlocCard';
 import Footer from './components/Footer';
-// import { BrowserRouter as Router } from 'react-router-dom'
+import FicheLogement from './pages/FicheLogement';
+import APropos from './pages/APropos';
+import NotFound from './components/NotFound';
 
 
 const App = () => {
     return (
-        <div>
-            <Header />
-            <Banner />
-            <BlocCard />
-            <Footer />
-        </div>
-    );
+        <Router>
+      <Header />
+      <Routes>
+        <Route exact path="/" element={<Home />} />
+        <Route path="/FicheLogement" element={<FicheLogement />} />
+        <Route path="/APropos" element={<APropos />} />
+        <Route exact path="*" element={<NotFound />} />
+      </Routes>
+      <Footer />
+    </Router>
+    )
 };
+
+
 
 export default App;
