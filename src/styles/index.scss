@@ -4,7 +4,11 @@
 
 @import "./layout/general";
 @import "./layout/header";
+@import "./layout/footer";
+
 @import "./layout/banner";
 @import "./layout/blocCard";
 @import "./layout/erreur";
-@import "./layout/footer";
+@import "./layout/volet";
+
+@import "./animations/dropdown"

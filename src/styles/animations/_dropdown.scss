@@ -1,0 +1,15 @@
+@keyframes rotate {
+    from{
+        
+        transform: rotate(0);
+    }
+    to{
+        transform: rotate(180deg);
+    }
+}
+
+.btnOuverture{
+    &.rotate-1 {
+        animation: rotate 10ms ease-in-out forwards;
+      }
+}
