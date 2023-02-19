@@ -13,13 +13,13 @@
         padding: 10px;
         height: 60px;
         font-weight: 500;
+        p{
+        color: white;
+        }
         button{
             background-color: $color-primary;
             height: 100%;
             border: 0;
-        }
-        img{
-            background-color: $color-primary;
         }
     }
     &_hiden{
@@ -29,6 +29,5 @@
         font-weight: 400;
         text-align: left;
         padding: 25px 8px 10px;
-        
     }
 }

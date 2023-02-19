@@ -1,0 +1,37 @@
+.slider{
+    width: 100%;
+    height: 500px;
+    margin: auto;
+    border-radius: 25px;
+    position: relative;
+    &_active{
+        width: 100%;
+        height: 100%;
+    }
+    &_inactive{
+        height: 1px;
+    }
+    &_picture{
+        width: 100%;
+        height: 100%;
+        border-radius: 25px;
+    }
+    &_previous{
+        position: absolute;
+        top: 45%;
+        left: 20px;
+    }
+    &_next{
+        position: absolute;
+        top: 45%;
+        right: 20px;
+    }
+    &_number{
+        position: absolute;
+        left: 50%;
+        bottom: 15px;
+        color: white;
+        font-weight: 500;
+        font-size: 24px;
+    }
+}

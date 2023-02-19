@@ -17,20 +17,18 @@ function Volet({ titre, texte }) {
   }
 
   return (
-    <section>
-      <aside className="dropdown">
-        <div className="dropdown_visibl">
-          <p>{titre}</p>
-          <button
-            className={`btnOuverture ${rotationClass}`}
-            onClick={handleClick}
-          >
-            <img src={vector} alt="bouton d'ouverture" />
-          </button>
-        </div>
-        {visible && <div className="dropdown_hiden">{texte}</div>}
-      </aside>
-    </section>
+    <aside className="dropdown">
+      <div className="dropdown_visibl">
+        <p>{titre}</p>
+        <button
+          className={`btnOuverture ${rotationClass}`}
+          onClick={handleClick}
+        >
+          <img src={vector} alt="bouton d'ouverture" />
+        </button>
+      </div>
+      {visible && <div className="dropdown_hiden">{texte}</div>}
+    </aside>
   )
 }
 export default Volet
