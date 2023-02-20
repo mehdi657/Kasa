@@ -5,11 +5,17 @@
     align-items: $align;
 }
 
-@mixin ellipsis {
-    width: 100%;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    text-align: left;
+@mixin width($wi,$he:$wi) {
+    width: $wi;
+    height: $he;
 }
+// @mixin ellipsis {
+//     width: 100%;
+//     white-space: nowrap;
+//     overflow: hidden;
+//     text-overflow: ellipsis;
+//     text-align: left;
+// }
 
+// @include flex(,,,,);
+// @include width(auto, 25px);

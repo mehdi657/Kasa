@@ -2,8 +2,7 @@
     width: 90%;
     margin: auto;
     &_contnair1{
-        display: flex;
-        justify-content: space-between;
+        @extend %flex-between;
         align-items: center;
     }
     &_infos{
@@ -19,16 +18,14 @@
             margin-top: 0;
         }
         ul{
-            display: flex;
-            justify-content: flex-start;
+            @extend %flex-start;
             padding: 0;
             
         }
         li{
-            width: auto;
+            @include width(auto, 25px);
             padding: 3px 20px;
             margin-right: 15px;
-            height: 25px;
             border-radius: 10px;
             background-color: $color-primary;
             color: white;
@@ -36,32 +33,32 @@
         }
     }
     &_contact{
-        width: 20%;
+        @include width(20%, auto);
+        display: flex;
+        flex-direction: column;
         &_bloc{
-            display: flex;
-            justify-content: flex-end;
+            @extend %flex-end;
             height: 50%;
         }
         &_name{
             width: min-content;
             font-size: 18px;
             padding: 5px;
+            margin-right: 20px;
         }
         &_pict{
-            width: 64px;
-            height: 64px;
+            @include width(64px);
+            min-width: 64px;
             border-radius: 35px;
-            margin-left: 20px;
             background-color: #C4C4C4;
             img{
-                width: 100%;
-                height: 100%;
+                @extend %width;
                 border-radius: 35px;
             }
         }
         &_star{
-            display: flex;
-            justify-content: flex-end;
+            @extend %flex-end;
+            align-items: baseline;
             margin-top: 20px;
         }
     }
@@ -71,9 +68,9 @@
         padding-top: 30px;
         min-height: 220px;
         &_volet{
-            width: 47%;
+            @include width(47%, auto);
             .dropdown{
-            width: 100%;
+                @include width(100%, auto);
             }
         }
     }
