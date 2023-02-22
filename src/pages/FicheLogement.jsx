@@ -5,12 +5,15 @@ import Slider from '../components/Slider'
 import Tags from '../components/Tags'
 import Volet from '../components/Volet'
 import Star from '../components/Star'
+import NotFound from '../components/NotFound'
 
 const FicheLogement = () => {
   const { id } = useParams()
   const res = Annonces.find((data) => data.id === id)
 
-  return (
+  return !res ? (
+    <NotFound />
+  ) : (
     <section className="fiche">
       <Slider slides={res.pictures} />
       <aside className="fiche_contnair1">

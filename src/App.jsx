@@ -10,14 +10,14 @@ import NotFound from './components/NotFound'
 const App = () => {
   return (
     <Router>
-        <Header />
-        <Routes>
-          <Route exact path="/" element={<Home />} />
-          <Route path="/FicheLogement/:id" element={<FicheLogement />} />
-          <Route path="/APropos" element={<APropos />} />
-          <Route exact path="*" element={<NotFound />} />
-        </Routes>
-        <Footer />
+      <Header />
+      <Routes>
+        <Route exact path="/" element={<Home />} />
+        <Route path="/FicheLogement/:id" element={<FicheLogement />} />
+        <Route path="/APropos" element={<APropos />} />
+        <Route path="*" element={<NotFound />} />
+      </Routes>
+      <Footer />
     </Router>
   )
 }
