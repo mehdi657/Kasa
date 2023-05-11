@@ -9,7 +9,7 @@ import NotFound from './components/NotFound'
 
 const App = () => {
   return (
-    <Router>
+    <Router basename="/">
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
